@@ -1,0 +1,44 @@
+name: VibeCore
+version: '${project.version}'
+main: com.vibecoder.vibecore.VibeCore
+api-version: '1.20'
+description: Core utilities for server management
+authors: [vibecoder-java]
+commands:
+  heal:
+    description: Heal a player
+    usage: /heal [player]
+    permission: vibecore.heal
+  feed:
+    description: Feed a player
+    usage: /feed [player]
+    permission: vibecore.feed
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+    permission: vibecore.spawn
+  setspawn:
+    description: Set the spawn location
+    usage: /setspawn
+    permission: vibecore.setspawn
+  balance:
+    description: Check your balance
+    usage: /balance [player]
+    permission: vibecore.balance
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+    permission: vibecore.pay
+permissions:
+  vibecore.heal:
+    default: op
+  vibecore.feed:
+    default: op
+  vibecore.spawn:
+    default: true
+  vibecore.setspawn:
+    default: op
+  vibecore.balance:
+    default: true
+  vibecore.pay:
+    default: true
